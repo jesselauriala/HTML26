@@ -10,20 +10,81 @@
 </head>
 <body>
 
+<style>
+label,
+button{
+    display: block;
+    margin-top: 10px;
+
+}
+input{
+    textarea{
+        width: 100%;
+        height: 100px;
+
+    }
+}
+
+
+</style>
+
 
     <h1>Etusivu</h1>
 
 <section>
 <h3>Etusivulla voit navigoida seuraavien sivujen välillä:</h3>
 
-<nav> <a style="color:blue;" href="Etusivu.html">Etusivu</a></nav>
-<nav><a href="Kuvia.html">Kuvia</a></nav>
-<nav><a href="Yhteystiedot.html">Yhteystiedot</a></nav>
+<nav style="display: flex; gap: 40px;">
+    <a style="color: blue;" href="Etusivu.html">Etusivu</a>
+    <a href="Kuvia.html">Kuvia</a>
+    <a href="Yhteystiedot.html">Yhteystiedot</a>
+</nav>
 
-<p style="color:blue;">Toimiiko värien muuttaminen</p>
+
+
+
 
     
 </section>
+
+<a style="color: goldenrod; text-decoration: underline;">Lähetä viesti</a>
+ 
+
+<form>
+    
+    <label for="nimi">Nimi:</label>
+    <input type="text" id="nimi" name="nimi" required>
+    <label for="sähköposti">Sähköposti:</label>
+    <input type="email" id="sähköposti" name="" placeholder="nimi@esimerkki.com" required>
+    <label for="aihe">Aihe:</label>
+    <input type="text" id="aihe" name="aihe" autocomplete="on" required>
+    <label for="viesti">Viesti:</label>
+    <textarea id="viesti" name="viesti" required></textarea>
+    <button type="submit" value="Lähetä">Lähetä</button>
+
+</form>
+
+
+
+
+<a style="color: goldenrod; text-decoration: underline;">Rekisteröidy</a>
+
+<form>
+
+<input type="text" id="Käyttäjänimi" name="Käyttäjänimi" placeholder="Käyttäjänimi" required>
+<input type="email" id="sähköposti" name="sähköposti" placeholder="nimi@esimerkki.com" required>
+<input type="password" id="salasana" name="salasana" placeholder="Salasana" required>
+<input type="password" id="salasana_vahvistus" name="salasana_vahvistus" placeholder="Salasanan vahvistus" required>
+<input type="date" id="Syntymäpäivä" name="Syntymäpäivä" placeholder="Syntymäpäivä" required>
+<fieldset>
+    <legend> Hyväksyn käyttöehdot</legend>
+    <input type="checkbox" id="hyväksyn" name="hyväksyn" required>
+</fieldset>
+
+</form>
+
+
+
 
 </body>
 </html>
