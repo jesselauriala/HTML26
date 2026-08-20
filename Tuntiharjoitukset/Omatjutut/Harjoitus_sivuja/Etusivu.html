@@ -1,107 +1,109 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tyyli.css">
     <title>Etusivu</title>
 
-  
+
 </head>
+
 <body>
 
-<style>
-label,
-button{
-    display: block;
-    margin-top: 10px;
+    <style>
+        label,
+        button {
+            display: block;
+            margin-top: 10px;
 
-}
-input{
-    textarea{
-        width: 100%;
-        height: 100px;
+        }
 
-    }
-}
+        input {
+            textarea {
+                width: 100%;
+                height: 100px;
 
-
-</style>
+            }
+        }
+    </style>
 
 
     <h1>Etusivu</h1>
 
-<section>
-<h3>Etusivulla voit navigoida seuraavien sivujen välillä:</h3>
+    <section>
+        <h3>Etusivulla voit navigoida seuraavien sivujen välillä:</h3>
 
-<nav style="display: flex; gap: 40px;">
-    <a style="color: blue;" href="Etusivu.html">Etusivu</a>
-    <a href="Kuvia.html">Kuvia</a>
-    <a href="Yhteystiedot.html">Yhteystiedot</a>
-</nav>
-
-
-
-
-
-    
-</section>
-
-<a style="color: goldenrod; text-decoration: underline;">Lähetä viesti</a>
- 
-
-<form>
-    
-    <label for="nimi">Nimi:</label>
-    <input type="text" id="nimi" name="nimi" required>
-    <label for="sähköposti">Sähköposti:</label>
-    <input type="email" id="sähköposti" name="" placeholder="nimi@esimerkki.com" required>
-    <label for="aihe">Aihe:</label>
-    <input type="text" id="aihe" name="aihe" autocomplete="on" required>
-    <label for="viesti">Viesti:</label>
-    <textarea id="viesti" name="viesti" required></textarea>
-    <button type="submit" value="Lähetä">Lähetä</button>
-
-</form>
+        <nav style="display: flex; gap: 40px;">
+            <a style="color: blue;" href="Etusivu.html">Etusivu</a>
+            <a href="Kuvia.html">Kuvia</a>
+            <a href="Yhteystiedot.html">Yhteystiedot</a>
+        </nav>
 
 
 
 
-<a style="color: goldenrod; text-decoration: underline;">Rekisteröidy</a>
 
-<form>
 
-<input type="text" id="Käyttäjänimi" name="Käyttäjänimi" placeholder="Käyttäjänimi" required>
-<input type="email" id="sähköposti" name="sähköposti" placeholder="nimi@esimerkki.com" required>
-<input type="password" id="salasana" name="salasana" placeholder="Salasana" required>
-<input type="password" id="salasana_vahvistus" name="salasana_vahvistus" placeholder="Salasanan vahvistus" required>
-<input type="date" id="Syntymäpäivä" name="Syntymäpäivä" placeholder="Syntymäpäivä" required>
-<fieldset>
-    <legend> Hyväksyn käyttöehdot</legend>
-    <input type="checkbox" id="hyväksyn" name="hyväksyn" required>
-</fieldset>
+    </section>
 
-</form>
+    <a style="color: goldenrod; text-decoration: underline;">Lähetä viesti</a>
 
-<h1>Podcast-jakso</h1>
-<audio controls>
-  <source src="../Äänet/aani.mp3" type="audio/mpeg">
-</audio>
-<section>
-  <h2>Tekstivastine</h2>
-  <p> Podcast-jakso</p>
-</section>
+
+    <form>
+
+        <label for="nimi">Nimi:</label>
+        <input type="text" id="nimi" name="nimi" required>
+        <label for="sähköposti">Sähköposti:</label>
+        <input type="email" id="sähköposti" name="" placeholder="nimi@esimerkki.com" required>
+        <label for="aihe">Aihe:</label>
+        <input type="text" id="aihe" name="aihe" autocomplete="on" required>
+        <label for="viesti">Viesti:</label>
+        <textarea id="viesti" name="viesti" required></textarea>
+        <button type="submit" value="Lähetä">Lähetä</button>
+
+    </form>
 
 
 
-<video controls poster="kuvat/kuva1.jpg" width="640" height="360">
-  <source src="../Videot/video1.mp4" type="video/mp4">
-  <track kind="captions" src="captions.vtt" srclang="fi" label="Suomi">
-  
-</video>
+
+    <a style="color: goldenrod; text-decoration: underline;">Rekisteröidy</a>
+
+    <form>
+
+        <input type="text" id="Käyttäjänimi" name="Käyttäjänimi" placeholder="Käyttäjänimi" required>
+        <input type="email" id="sähköposti" name="sähköposti" placeholder="nimi@esimerkki.com" required>
+        <input type="password" id="salasana" name="salasana" placeholder="Salasana" required>
+        <input type="password" id="salasana_vahvistus" name="salasana_vahvistus" placeholder="Salasanan vahvistus"
+            required>
+        <input type="date" id="Syntymäpäivä" name="Syntymäpäivä" placeholder="Syntymäpäivä" required>
+        <fieldset>
+            <legend> Hyväksyn käyttöehdot</legend>
+            <input type="checkbox" id="hyväksyn" name="hyväksyn" required>
+        </fieldset>
+
+    </form>
+
+    <h1>Podcast-jakso</h1>
+    <audio controls>
+        <source src="../Äänet/aani.mp3" type="audio/mpeg">
+    </audio>
+    <section>
+        <h2>Tekstivastine</h2>
+        <p> Podcast-jakso</p>
+    </section>
+
+
+
+    <video controls width="640" height="360">
+        <source src="../Videot/video1.mp4" type="video/mp4">
+        Selaimesi ei tue HTML5-videota.
+    </video>
 
 
 
 
 </body>
+
 </html>
