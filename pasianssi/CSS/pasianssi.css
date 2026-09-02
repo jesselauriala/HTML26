@@ -1,4 +1,59 @@
-body {
+* {
     background-color: #AA7D39;
-    font-family : Verdana, Geneva, Tahoma, sans-serif;
+    color: #f8f4f4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+}
+
+h1 {
+    margin: 1.5em 1em;
+}
+
+
+.navigointipalkki ul {
+    display: flex;
+    background-color: rgb(8, 8, 8);
+   list-style-type: none;
+
+
+}
+
+.navigointipalkki li {
+    float: left;
+    margin: 0.5em 1em;
+  
+}
+
+.navigointipalkki a {
+    text-decoration: rgb(214, 201, 201);
+    padding: 0.40px;
+}
+
+.navigointipalkki a:hover {
+    background-color: #dfdfdf;
+    
+
+}
+
+.kuva {
+    float: right;
+
+}
+
+
+.video {
+    width: 512px;
+    height: 288px;
+    float: left;
+    position: relative;
+    padding: 0px;
+    margin: 20px;
+}
+
+
+.vieraskirja {
+    text-align: center;
+
 }
