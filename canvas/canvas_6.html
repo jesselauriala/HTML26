@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<canvas id="piirtoalue" width="400" height="300"></canvas>  
+  
+<script>  
+  const canvas = document.getElementById("piirtoalue");  
+  const ctx = canvas.getContext("2d");  
+    
+  // Täytetty suorakulmio  
+  ctx.fillStyle = "blue";  
+  ctx.fillRect(30, 40, 90, 60);  
+    
+  // Vain reunaviiva  
+  ctx.strokeStyle = "green";  
+  ctx.lineWidth = 3;  
+  ctx.strokeRect(180, 40, 90, 60);  
+    
+  // Tyhjennä alue  
+  ctx.clearRect(20, 20, 90, 60);  
+</script>  
+
+
+
+
+</body>
+</html>
