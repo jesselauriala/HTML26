@@ -1,0 +1,26 @@
+.myyntikortti {
+    display: flex;
+    gap: 40px;
+    max-width: 900px;
+    margin:0 auto;
+
+    
+}
+
+.kortit {
+    padding: 20px;
+    border: 5px solid #555;
+    border-radius: 12px;
+    max-width: 280px;
+    background-color:rgba(173, 128, 4, 0.24);
+}
+
+.kortit button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background: #0e1318;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}

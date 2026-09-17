@@ -1,0 +1,24 @@
+.pricing-container {
+  display: flex;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  padding: 20px;
+  border: 5px solid #ccc;
+  border-radius: 12px;
+  max-width: 280px;
+
+}
+
+.pricing-card button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
