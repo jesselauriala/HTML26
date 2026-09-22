@@ -1,0 +1,21 @@
+
+.box.a {
+    background-color: rgb(161, 4, 4);
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.box.b {
+    background-color: rgb(4, 161, 4);
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+}
+
+.box.c {
+    background-color: rgb(4, 4, 161);
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+}
