@@ -1,0 +1,75 @@
+/* CSS-kokonaisharjoitus, osa 2 */
+
+/* Aloita CSS:n kirjoittaminen tämän kommentin alta. */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #070707;
+    background-color: rgb(245, 246, 247);
+    box-sizing: border-box;
+
+}
+
+.hero{
+    background-color:rgb(145, 143, 143)
+}
+
+header {
+    color: rgb(31, 30, 29);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(112, 110, 110);
+    border: 2px solid rgb(31, 30, 29);
+    border-radius: 25px;
+    padding: 20px;
+}
+
+h2 {
+    color:blue;
+    font-family:'Times New Roman', Times, serif;
+    border: px solid #231;
+
+}
+
+.nav-list {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.eyebrow {
+    background-color: aqua;
+}
+
+section {
+    margin: 0 auto;
+    padding: 0;
+    color:rgb(26, 25, 23)
+
+}
+
+.content-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.card {
+    background-color:rgb(0, 62, 104);
+    border: 2px solid #070707;
+    border-radius: 10px;
+}
+
+.button {
+    padding: 0px;
+    color:rgb(233, 238, 236);
+    text-decoration: none;
+}

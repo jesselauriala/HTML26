@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Box model -testi</title>
+<style>
+  body {
+    display: flex;
+    padding-top: 60px;
+    background: #706a6a;
+    font-family: sans-serif;
+  }
+
+  .laatikko {
+    width: 200px;
+    height: 100px;
+
+    /* muokkaa näitä ja katso mitä tapahtuu */
+    margin: 80px;
+    border: 20px solid #d85a30;
+    padding: 70px;
+
+    background-color: #03446d; /* content-alue */
+    outline: 2px dashed #b30e0e;  /* näyttää missä margin alkaa */
+  }
+
+
+</style>
 </head>
 <body>
 
+  <div class="laatikko">
+    Tämä on content-alue. Kokeile muuttaa margin/border/padding-arvoja yllä.
+  </div>
 
-<span class="box a">A</span>
-<span class="box b">B</span>
-<span class="box c">C</span>
-
-
-    
 </body>
 </html>

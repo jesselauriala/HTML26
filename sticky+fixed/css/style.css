@@ -1,0 +1,16 @@
+.toolbar {
+    position: sticky;
+    top: 0;
+    background-color: blue;
+    z-index: 1;
+}
+
+.help {
+    position: fixed;
+    right:0;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: bisque;
+
+
+}

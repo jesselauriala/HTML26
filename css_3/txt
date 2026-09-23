@@ -1,0 +1,42 @@
+selector {
+  /* Väri ja tausta */
+  color: #333333;                    /* Tekstin väri */
+  background-color: #ffffff;         /* Elementin taustaväri */
+  background-image: url("kuva.jpg"); /* Taustakuva */
+  opacity: 0.8;                      /* Läpinäkyvyys (0 = näkymätön, 1 = täysin näkyvä) */
+
+  /* Fontit ja teksti */
+  font-family: Arial, sans-serif;    /* Fontti, jota käytetään */
+  font-size: 16px;                   /* Tekstin koko */
+  font-weight: bold;                 /* Tekstin paksuus (normal, bold, 100–900) */
+  text-align: center;                /* Tekstin tasaus (left, center, right) */
+  text-decoration: underline;        /* Alleviivaus, yliviivaus tms. */
+  line-height: 1.5;                  /* Rivien väli (rivinkorkeus) */
+
+  /* Mitat */
+  width: 100%;                       /* Elementin leveys */
+  height: 200px;                     /* Elementin korkeus */
+  max-width: 800px;                  /* Suurin sallittu leveys */
+  min-height: 100px;                 /* Pienin sallittu korkeus */
+
+  /* Reunukset ja välit */
+  margin: 10px;                      /* Tila elementin ULKOPUOLELLA (muihin elementteihin) */
+  padding: 20px;                     /* Tila elementin SISÄLLÄ (reunan ja sisällön väli) */
+  border: 1px solid #000000;         /* Reunaviiva: paksuus, tyyli, väri */
+  border-radius: 8px;                /* Reunojen pyöristys */
+
+  /* Asettelu */
+  display: block;                    /* Miten elementti asettuu sivulle (block, flex, grid, inline...) */
+  position: relative;                /* Sijoittelutapa (static, relative, absolute, fixed) */
+  top: 0;                            /* Etäisyys ylhäältä (toimii position-arvon kanssa) */
+  left: 0;                           /* Etäisyys vasemmalta */
+  z-index: 10;                       /* Kerrosjärjestys (isompi = päällimmäisenä) */
+
+  /* Muut */
+  cursor: pointer;                   /* Hiiren kursorin muoto hoverissa (esim. käsi-ikoni) */
+  overflow: hidden;                  /* Mitä tapahtuu, jos sisältö ei mahdu (hidden, scroll, auto) */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Varjostus elementin ympärillä */
+  transition: all 0.3s ease;         /* Pehmeä siirtymä muutoksille (esim. hoverissa) */
+}
+
+absolute on relativen pari

@@ -1,0 +1,17 @@
+.card {
+    position: relative;
+    color:rgb(28, 32, 32);
+    border: 1px solid; 
+    border-radius: 20px;
+    width: 400px;
+   
+}
+
+.badge {
+    top: 12px;
+    right: 12px;
+    height: 40px;
+    padding: 20px;
+    background-color: rgb(199, 0, 0);
+    position: absolute; 
+}

@@ -1,0 +1,56 @@
+/* CSS-kokonaisharjoitus, osa 5 */
+
+/* Aloita CSS:n kirjoittaminen tämän kommentin alta. */
+
+
+
+
+.hero {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    border: 1px solid #213;
+    border-radius: 15px;
+    background-color:bisque;
+    
+}
+
+.h1 {
+    position: relative;
+    left: 100px;
+}
+
+.eyebrow {
+    margin: 10px;
+    height: 150px;
+    font-size: 15px;
+    line-height: 1.5;
+
+}
+
+.content-section {
+    border: 1px solid rgb(211, 72, 7);
+    border-radius: 15px;
+    display: fixed;
+    background-color: bisque;
+}
+
+.card-list {
+    border-radius: 15px;
+    padding: 20px;
+    
+}
+
+.article {
+    border-radius: 15px;
+
+    
+}
+
+.card {
+    background: #c2a9a9;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
