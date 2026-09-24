@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.nav { 
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 20px;
+    background-color: rgb(3, 156, 194);
+
+}
+
+.nav a {
+
+    text-decoration: none;
+    color: rgb(252, 253, 253);
+}
+
+.login {
+    margin-left: auto;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.teksti {
+    gap: 1rem;
+    background-color: black;
+    color:aliceblue
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+}
+
+.card {
+    flex: 1 1 16rem;
+    border: 1px solid #422;
+    border-radius: 10px;
+    background-color: rgba(208, 255, 0, 0.178);
+}

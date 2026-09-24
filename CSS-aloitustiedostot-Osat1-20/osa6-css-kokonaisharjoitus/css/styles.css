@@ -1,3 +1,73 @@
 /* CSS-kokonaisharjoitus, osa 6 */
 
 /* Aloita CSS:n kirjoittaminen tämän kommentin alta. */
+
+
+.hero {
+    flex: 1 1 200;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.eyebrow {
+    background-color: rgb(3, 3, 48);
+    padding: 0.5rem;
+    color: #ccc;
+    border-radius: 8px;
+}
+
+
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    flex: 1 1 300px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    border: 2px solid #232;
+
+
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+
+}
+
+
+.card__badge {
+    background-color: rgb(63, 0, 134);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 25px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+
+
+}
+
+
+
+.button {
+    background-color:black;
+    color:aliceblue;
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+
+
