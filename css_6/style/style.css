@@ -1,0 +1,23 @@
+.page {
+  display: grid;
+  gap: 1rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+}
+
+@media (width >= 48rem) {
+  .page {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
