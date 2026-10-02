@@ -1,0 +1,27 @@
+.hero {
+  min-height: 100vh;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-image:
+    linear-gradient(rgba(53, 14, 14, 0.4), rgba(128, 3, 3, 0.4)),
+    url("../kuvat/kuva.png");
+
+  padding: 0.6rem 1rem;
+}
+
+
+.cta {
+    border: 5px solid rgb(23, 23, 24);
+    border-radius: 25px;
+    background-color: rgb(255, 0, 0);
+    font-size: 25px;
+    
+}
+
+
