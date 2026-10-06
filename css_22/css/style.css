@@ -1,0 +1,75 @@
+.kortit{
+    padding: 25px;
+    position: absolute;
+}
+
+.kortti {
+    background-color: bisque;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.kortti:hover {
+    transform: scale (1.09);
+    background-color: rgb(97, 0, 0);
+}
+
+.kortti:focus-visible {
+    outline: auto;
+    background-color: rgb(8, 8, 134);
+}
+
+.kortti-2 {
+    animation: slideInCard 1.2s ease-out forwards;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.kortti-3 {
+    animation: attentionPulse 1.6s ease-in-out infinite;
+}
+
+.spinner {
+    background-color: bisque;
+    border: 5px solid #e5e7eb;
+    border-radius: 15px;
+    animation: spin 86s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideInCard {
+    from {
+        opacity: 0;
+        transform: translateX(-60px) rotate(-5deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+@keyframes attentionPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(44, 130, 201, 0);
+    }
+    20% {
+        transform: scale(1.02);
+        box-shadow: 0 0 18px rgba(44, 130, 201, 0.5);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 26px rgba(255, 153, 0, 0.7);
+    }
+    75% {
+        transform: scale(1.02);
+        box-shadow: 0 0 18px rgba(44, 130, 201, 0.5);
+    }
+}

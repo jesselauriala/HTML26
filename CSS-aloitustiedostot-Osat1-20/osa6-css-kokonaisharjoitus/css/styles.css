@@ -18,6 +18,34 @@
 
 
 
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list a {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 999px;
+    color:#ccc;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: rgb(3, 3, 48);
+    transition: 0.2s ease, 0.2s ease;
+
+}
+
+.nav-list a:hover {
+    background-color: rgb(3, 3, 48);
+    transform: translateY(-6px);
+
+}
+
 .card-list {
     display: flex;
     flex-wrap: wrap;
