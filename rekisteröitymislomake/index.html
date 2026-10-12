@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomake</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<header class="id">
+    <h1 class="logo">Rekisteröitymislomake</h1>
+    <p>Harjoitus</p>
+</header>
+
+<main class="pääsisältö">
+        <form class="lomake">
+            <fieldset>
+                <legend>Rekisteröitymislomake</legend>
+            <label for="Nimi">Nimi</label>
+            <input id="Nimi" name="nimi" type="text" minlength="4" maxlength="12" required>
+            
+            <label for="email">Sähköposti</label>
+            <input id="email" name="email" type="email" required>
+            
+            <label for="salasana">Salasana</label>
+            <input id="salasana" name="salasana" type="password" required>
+            
+            <input type="checkbox" name="ehdot">Hyväksyn ehdot
+            
+            <button type="submit">Rekisteröidy</button>
+            </fieldset>
+            
+        </form>
+
+
+</main>
+
+    
+
+
+
+</body>
+</html>

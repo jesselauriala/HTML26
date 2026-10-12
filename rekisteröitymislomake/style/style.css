@@ -1,0 +1,110 @@
+:root {
+    font-family: Arial, sans-serif;
+    color: #172033;
+    background: #f3f6fb;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-content: center;
+    padding: 2rem;
+}
+
+.id {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.id p {
+    color: #536179;
+}
+
+.lomake {
+    width: min(100%, 28rem);
+}
+
+.lomake fieldset {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.75rem;
+    background: #fff;
+    box-shadow: 0 0.75rem 2rem rgb(23 32 51 / 8%);
+}
+
+.lomake legend {
+    padding: 0 0.5rem;
+    font-weight: 700;
+}
+
+.lomake label {
+    font-weight: 600;
+}
+
+.lomake input:not([type="checkbox"]) {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.6rem 0.75rem;
+    border: 2px solid #aab6c8;
+    border-radius: 0.4rem;
+    background: #fff;
+    color: inherit;
+    font: inherit;
+    transition: border-color 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
+}
+
+.lomake input:not([type="checkbox"]):hover {
+    border-color: #526987;
+    box-shadow: 0 0 0 3px rgb(82 105 135 / 14%);
+}
+
+.lomake input:not([type="checkbox"]):focus-visible,
+.lomake button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+}
+
+.lomake input:not([type="checkbox"]):valid {
+    border-color: #16834a;
+    background-color: #f2fbf5;
+}
+
+.lomake input:not([type="checkbox"]):user-invalid {
+    border-color: #c62828;
+    background-color: #fff5f5;
+}
+
+.lomake input[type="checkbox"] {
+    accent-color: #2457a7;
+}
+
+.lomake button {
+    min-height: 2.75rem;
+    margin-top: 0.5rem;
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 0.4rem;
+    background: #2457a7;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 150ms ease, box-shadow 150ms ease;
+}
+
+.lomake button:hover:not(:disabled) {
+    background: #193f7d;
+}
+
+.lomake input:disabled,
+.lomake button:disabled {
+    border-color: #d1d5db;
+    background: #e5e7eb;
+    color: #6b7280;
+    cursor: not-allowed;
+    opacity: 0.75;
+}
