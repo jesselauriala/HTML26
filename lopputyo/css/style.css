@@ -55,7 +55,7 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-.main{
+.main {
 
     max-width: 1200px;
     display: grid;
@@ -157,4 +157,90 @@ nav a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 4rem 6rem;
 
+}
+
+.info_yhteystiedot {
+    background-color: #f1f6f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: clamp(24px, 4vw, 48px);
+
+}
+
+.info_yhteystiedot h2 {
+    background-color: #004c86;
+    border-radius: 8px;
+    margin-bottom: 22px;
+    color: #fff;
+    line-height: 2;
+}
+.hover_info_yhteystiedot:hover {
+    transform: translateY(-2px);
+   
+}
+
+.esittely {
+    max-width: 600px;
+    max-height: 600px;
+    color: #fff;
+    font-size: 1.09rem;
+    line-height: 1.8;
+    background-color: #003a5c;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.8s ease, box-shadow 0.3s ease;
+    padding: clamp(20px, 3vw, 32px);
+
+}
+
+
+.form {
+    background-color: #f1f6f9;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 0;
+    padding: clamp(24px, 4vw, 48px);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: clamp(20px, 4vw, 48px);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(32px, 6vw, 72px) 24px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aab7c1;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.form textarea {
+    resize: vertical;
+}
+
+@media (max-width: 700px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}
+ 
+
+
+.yhteystiedot {
+    font: inherit;
+    font-size: 1.05rem;
 }

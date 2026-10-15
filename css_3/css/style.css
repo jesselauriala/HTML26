@@ -1,21 +1,56 @@
-
-.box.a {
-    background-color: rgb(161, 4, 4);
-    display: inline-block;
-    width: 100px;
-    height: 100px;
+.box-sizing {
+    box-sizing: border-box;
 }
 
-.box.b {
-    background-color: rgb(4, 161, 4);
-    display: inline-block;
-    width: 30px;
-    height: 20px;
+
+body {
+	margin: 0;
+	padding: 40px 16px;
+	background-color: #f2f2f2;
+	font-family: Arial, sans-serif;
 }
 
-.box.c {
-    background-color: rgb(4, 4, 161);
-    display: inline-block;
-    width: 50px;
-    height: 40px;
+main {
+	display: flex;
+	justify-content: center;
 }
+
+.kamera {
+	width: 100%;
+	max-width: 320px;
+	padding: 16px;
+	background-color: #c0bfbf;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+    border-left: 5px solid #234;
+    
+}
+
+.kamera img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-top: 16px;
+    border-radius: 6px;
+}
+
+.cta-button {
+	padding: 8px 16px;
+	color: #fff;
+	background-color: #287a45;
+	border: 0;
+	border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.cta-button:focus {
+  outline: 3px solid orange;
+  outline-offset: 4px;
+}
+
+
+.cta-button:hover {
+    background-color: #00d44a;
+}
+
