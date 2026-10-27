@@ -3,39 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tutustu Konesalipalveluiden palvelin-, ylläpito- ja varmuuskopiointipalveluihin.">
     <link rel="stylesheet" href="../css/style.css">
     <title>Palvelut | Konesalipalvelut</title>
 </head>
 <body>
-    <header class="header">
-        <h1 class="logo"><a href="../index.html">Konesalipalvelut</a></h1>
+    <header class="etusivun-ylatunniste">
+        <h1 class="sivuston-nimi"><a href="../index.html">Konesalipalvelut</a></h1>
+        <nav class="navigaatio" aria-label="Päänavigaatio">
+            <ul>
+                <li><a href="../index.html">Etusivu</a></li>
+                <li><a href="palvelut.html" aria-current="page">Palvelut</a></li>
+                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="nav">
-        <ul>
-            <li><a href="../index.html">Etusivu</a></li>
-            <li><a href="palvelut.html">Palvelut</a></li>
-            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-        </ul>
-    </nav>
-
-
-    <main class="cards">
-        <section class="card">
-            <h2>Kortti 1</h2>
-            <p>Tämä on kuvailu kortille 1.</p>
+    <main class="sivun-sisalto palvelut-sisalto">
+        <section class="sivun-esittely">
+            <p class="osion-ylateksti">Palvelumme</p>
+            <h2>Yrityksesi tarpeisiin sopivat konesalipalvelut</h2>
+            <p>Autamme rakentamaan toimivan ja luotettavan teknisen ympäristön. Keskustellaan yhdessä, millainen ratkaisu sopii juuri sinun yrityksellesi.</p>
         </section>
 
-        <section class="card">
-            <h2>Kortti 2</h2>
-            <p>Tämä on kuvailu kortille 2.</p>
+        <section class="palvelukortit" aria-label="Konesalipalvelut">
+            <article class="palvelukortti">
+                <span class="palveluetu-numero">01</span>
+                <h3>Palvelinympäristöt</h3>
+                <p>Suunnittelemme yrityksesi käyttöön sopivan palvelinympäristön ja autamme sen käyttöönotossa. Ratkaisu mitoitetaan tarpeidesi ja toimintasi mukaan.</p>
+            </article>
+            <article class="palvelukortti">
+                <span class="palveluetu-numero">02</span>
+                <h3>Ylläpito ja valvonta</h3>
+                <p>Palvelinten säännöllinen ylläpito auttaa pitämään järjestelmät ajan tasalla ja arjen sujuvana. Saat tukea teknisiin kysymyksiin yhdestä paikasta.</p>
+            </article>
+            <article class="palvelukortti">
+                <span class="palveluetu-numero">03</span>
+                <h3>Varmuuskopiointi ja tietoturva</h3>
+                <p>Autamme suunnittelemaan tietojen varmuuskopioinnin ja suojaamaan yrityksesi teknistä ympäristöä. Käymme tarpeet ja sopivat toimintatavat läpi kanssasi.</p>
+            </article>
         </section>
 
-        <section class="card">
-            <h2>Kortti 3</h2>
-            <p>Tämä on kuvailu kortille 3.</p>
+        <section class="palvelut-cta">
+            <h2>Suunnitellaanko yrityksellesi sopiva ratkaisu?</h2>
+            <p>Kerro tarpeistasi, niin etsitään niihin sopiva kokonaisuus.</p>
+            <a href="yhteystiedot.html" class="painike">Ota yhteyttä</a>
         </section>
     </main>
-    
+
+    <footer class="alatunniste">
+        <p>&copy; 2026 Konesalipalvelut Oy</p>
+    </footer>
 </body>
 </html>

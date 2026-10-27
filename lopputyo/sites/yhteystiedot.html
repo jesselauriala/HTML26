@@ -3,56 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ota yhteyttä Konesalipalveluihin ja keskustellaan yrityksesi tarpeista.">
     <link rel="stylesheet" href="../css/style.css">
     <title>Yhteystiedot | Konesalipalvelut</title>
 </head>
 <body>
-    <header class="header">
-        <h1 class="logo"><a href="../index.html">Konesalipalvelut</a></h1>
+    <header class="etusivun-ylatunniste">
+        <h1 class="sivuston-nimi"><a href="../index.html">Konesalipalvelut</a></h1>
+        <nav class="navigaatio" aria-label="Päänavigaatio">
+            <ul>
+                <li><a href="../index.html">Etusivu</a></li>
+                <li><a href="palvelut.html">Palvelut</a></li>
+                <li><a href="yhteystiedot.html" aria-current="page">Yhteystiedot</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="nav">
-        <ul>
-            <li><a href="../index.html">Etusivu</a></li>
-            <li><a href="palvelut.html">Palvelut</a></li>
-            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-        </ul>
-    </nav>
-
-    
     <main class="contact-layout">
-    <section class="info_yhteystiedot">
-          <h2>Ota yhteyttä</h2>
-             <p class="esittely">
-                Kaipaatko apua yrityksesi konesalipalveluihin tai haluatko keskustella
-                sopivasta ratkaisusta? Ota yhteyttä, autamme mielellämme.<br><br>
+        <section class="info_yhteystiedot" aria-labelledby="contact-title">
+            <p class="osion-ylateksti">Ollaan yhteydessä</p>
+            <h2 id="contact-title">Keskustellaan tarpeistasi</h2>
+            <p class="esittely">
+                Kaipaatko apua yrityksesi konesalipalveluihin tai haluatko keskustella sopivasta ratkaisusta? Ota yhteyttä, autamme mielellämme.
+            </p>
+            <address class="yhteystieto">
                 <strong>Pasi-Anssi Passinen</strong><br>
                 Koulukatu 1<br>
-                040-4324324<br>
+                <a href="tel:+358404324324">040 432 4324</a><br>
                 <a href="mailto:pasi-anssi.passinen@edu.keuda.fi">pasi-anssi.passinen@edu.keuda.fi</a>
-              </p>
-    </section>
-        
-        <form class="form">
-            <label for="name">Nimi:</label>
-            <input type="text" id="name" name="name" required>
+            </address>
+        </section>
 
-            <label for="email">Sähköposti:</label>
-            <input type="email" id="email" name="email" required>
+        <form class="form" id="yhteydenotto-lomake">
+            <h2>Lähetä viesti</h2>
+            <p class="lomake-ohje">Lomake avaa sähköpostiohjelmasi viestiluonnoksen. Tarkista viesti ja lähetä se sähköpostiohjelmassa.</p>
+            <label for="name">Nimi</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
 
-            <label for="message">Viesti:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="email">Sähköposti</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
 
-            <button class="button" type="submit">Lähetä</button>
+            <label for="message">Viesti</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="button" type="submit">Avaa viesti sähköpostissa</button>
+            <p class="lomake-ohje">Jos lomake ei toimi, voit kirjoittaa suoraan osoitteeseen <a href="mailto:pasi-anssi.passinen@edu.keuda.fi">pasi-anssi.passinen@edu.keuda.fi</a>.</p>
+            <p class="lomake-tila" id="lomake-tila" aria-live="polite"></p>
         </form>
     </main>
 
-    <footer class="footer">
-    <p>&copy; 2026 Konesalipalvelut Oy</p>
+    <footer class="alatunniste">
+        <p>&copy; 2026 Konesalipalvelut Oy</p>
     </footer>
 
+    <script>
+        const contactForm = document.querySelector("#yhteydenotto-lomake");
+        const formStatus = document.querySelector("#lomake-tila");
 
+        contactForm.addEventListener("submit", (event) => {
+            event.preventDefault();
 
+            const formData = new FormData(contactForm);
+            const subject = encodeURIComponent(`Yhteydenotto: ${formData.get("name")}`);
+            const body = encodeURIComponent(
+                `Nimi: ${formData.get("name")}\nSähköposti: ${formData.get("email")}\n\n${formData.get("message")}`
+            );
 
+            formStatus.textContent = "Sähköpostiluonnos avataan. Lähetä viesti sähköpostiohjelmassasi.";
+            window.location.href = `mailto:pasi-anssi.passinen@edu.keuda.fi?subject=${subject}&body=${body}`;
+        });
+    </script>
 </body>
 </html>

@@ -74,3 +74,37 @@ yardit = 10;
 muunnos = 0.9144;
 metrit = yardit * muunnos;
 console.log(yardit + " yardia on " + metrit + " metriä");
+
+
+const ikaNuori = 18;
+
+if (ikaNuori < 13) {
+    console.log("lapsi");
+} else if (ikaNuori <= 17) {
+    console.log("nuori");
+} else {
+    console.log("aikuinen");
+}
+
+const testi = 15;
+
+if (testi < 13) {
+    console.log("lapsi");
+} else if (testi <= 17) {
+    console.log("nuori");
+} else {
+    console.log("aikuinen");
+}
+
+
+
+
+const kirjautunut = true;
+const admin = false;
+const opettaja = false;
+
+const saaMuokata = kirjautunut && (admin || opettaja);
+
+console.log("Kirjautunut:", kirjautunut);
+console.log("Muokkaus sallittu:", saaMuokata);
+
