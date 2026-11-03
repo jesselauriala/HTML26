@@ -6,6 +6,7 @@
     <meta name="description" content="Ota yhteyttä Konesalipalveluihin ja keskustellaan yrityksesi tarpeista.">
     <link rel="stylesheet" href="../css/style.css">
     <title>Yhteystiedot | Konesalipalvelut</title>
+    <script src="java.js" defer></script>
 </head>
 <body>
     <header class="etusivun-ylatunniste">
@@ -46,7 +47,7 @@
             <label for="message">Viesti</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button class="button" type="submit">Avaa viesti sähköpostissa</button>
+            <button class="button" type="submit">Lähetä</button>
             <p class="lomake-ohje">Jos lomake ei toimi, voit kirjoittaa suoraan osoitteeseen <a href="mailto:pasi-anssi.passinen@edu.keuda.fi">pasi-anssi.passinen@edu.keuda.fi</a>.</p>
             <p class="lomake-tila" id="lomake-tila" aria-live="polite"></p>
         </form>
@@ -56,22 +57,6 @@
         <p>&copy; 2026 Konesalipalvelut Oy</p>
     </footer>
 
-    <script>
-        const contactForm = document.querySelector("#yhteydenotto-lomake");
-        const formStatus = document.querySelector("#lomake-tila");
 
-        contactForm.addEventListener("submit", (event) => {
-            event.preventDefault();
-
-            const formData = new FormData(contactForm);
-            const subject = encodeURIComponent(`Yhteydenotto: ${formData.get("name")}`);
-            const body = encodeURIComponent(
-                `Nimi: ${formData.get("name")}\nSähköposti: ${formData.get("email")}\n\n${formData.get("message")}`
-            );
-
-            formStatus.textContent = "Sähköpostiluonnos avataan. Lähetä viesti sähköpostiohjelmassasi.";
-            window.location.href = `mailto:pasi-anssi.passinen@edu.keuda.fi?subject=${subject}&body=${body}`;
-        });
-    </script>
 </body>
 </html>
