@@ -6,7 +6,7 @@
     <meta name="description" content="Ota yhteyttä Konesalipalveluihin ja keskustellaan yrityksesi tarpeista.">
     <link rel="stylesheet" href="../css/style.css">
     <title>Yhteystiedot | Konesalipalvelut</title>
-    <script src="java.js" defer></script>
+    <script src="../java.js" defer></script>
 </head>
 <body>
     <header class="etusivun-ylatunniste">
@@ -37,7 +37,6 @@
 
         <form class="form" id="yhteydenotto-lomake">
             <h2>Lähetä viesti</h2>
-            <p class="lomake-ohje">Lomake avaa sähköpostiohjelmasi viestiluonnoksen. Tarkista viesti ja lähetä se sähköpostiohjelmassa.</p>
             <label for="name">Nimi</label>
             <input type="text" id="name" name="name" autocomplete="name" required>
 
@@ -48,8 +47,7 @@
             <textarea id="message" name="message" rows="5" required></textarea>
 
             <button class="button" type="submit">Lähetä</button>
-            <p class="lomake-ohje">Jos lomake ei toimi, voit kirjoittaa suoraan osoitteeseen <a href="mailto:pasi-anssi.passinen@edu.keuda.fi">pasi-anssi.passinen@edu.keuda.fi</a>.</p>
-            <p class="lomake-tila" id="lomake-tila" aria-live="polite"></p>
+        
         </form>
     </main>
 

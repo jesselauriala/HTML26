@@ -32,6 +32,4 @@ Työtä tehdessä harjoittelin useamman HTML-sivun yhdistämistä navigaatiolla,
 
 ## Lomake
 
-Lomakkeessa kysytään nimeä, sähköpostiosoitetta ja viestiä. Kaikki kentät ovat pakollisia, ja selain tarkistaa sähköpostiosoitteen perusmuodon.
-
-Lomakkeen toiminta on vielä kesken java.js on tyhjä, joten lomake ei tällä hetkellä toimi.
+Lomakkeessa kysytään nimeä, sähköpostiosoitetta ja viestiä. Kaikki kentät ovat pakollisia, ja selain tarkistaa sähköpostiosoitteen perusmuodon. Lähetyksen jälkeen JavaScript tulostaa lomakkeen tiedot selaimen konsoliin harjoitusta varten.
