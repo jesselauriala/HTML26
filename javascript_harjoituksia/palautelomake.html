@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palautelomake</title>
+    <link rel="stylesheet" href="css/palautelomake.css">
+    <script src="palautelomake.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="palautelomake">
+            <h1>Palautelomake</h1>
+            <p class="ohje">Valitse aihe, kirjoita viesti ja anna arvosana.</p>
+
+            <form id="palautelomake">
+                <label for="aihe">Palautteen aihe</label>
+                <select id="aihe" name="aihe" required>
+                    <option value="">-- Valitse aihe --</option>
+                    <option value="Palaute">Palaute</option>
+                    <option value="Kysymys">Kysymys</option>
+                    <option value="Reklamaatio">Reklamaatio</option>
+                </select>
+
+                <label for="viesti">Viesti</label>
+                <textarea id="viesti" name="viesti" rows="5" required></textarea>
+
+                <fieldset class="arvosana">
+                    <legend>Anna arvosana</legend>
+                    <div class="arvosanat">
+                        <label><input type="radio" name="arvosana" value="1" required> 1</label>
+                        <label><input type="radio" name="arvosana" value="2"> 2</label>
+                        <label><input type="radio" name="arvosana" value="3"> 3</label>
+                        <label><input type="radio" name="arvosana" value="4"> 4</label>
+                        <label><input type="radio" name="arvosana" value="5"> 5</label>
+                    </div>
+                </fieldset>
+
+                <label class="yhteydenotto">
+                    <input type="checkbox" name="yhteydenottolupa" value="Kyllä">
+                    Minuun saa ottaa yhteyttä sähköpostitse.
+                </label>
+
+                <button type="submit">Lähetä palaute</button>
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>

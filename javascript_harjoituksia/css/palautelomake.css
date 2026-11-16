@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    background: #f1f3f8;
+    color: #202536;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.palautelomake {
+    padding: 28px;
+    background: #fff;
+    border: 1px solid #d9deea;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px #20253614;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+.ohje {
+    margin-bottom: 24px;
+    color: #596174;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aeb6c7;
+    border-radius: 6px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.arvosana {
+    margin: 8px 0;
+    padding: 12px;
+    border: 1px solid #d9deea;
+    border-radius: 6px;
+}
+
+.arvosanat {
+    display: flex;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.yhteydenotto {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px 16px;
+    border: 0;
+    border-radius: 6px;
+    background: #4b54a3;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #383f83;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    .palautelomake {
+        padding: 20px;
+    }
+
+}
