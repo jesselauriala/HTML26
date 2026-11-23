@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuotekortti</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
+
+<main class="sovellus">
+    <h1 class="otsikko">Tehtävälista</h1>
+    <p>Lisää päivän tehtävät</p>
+
+    <form id="taskForm">
+        <input
+        type="text"
+        id="taskInput"
+        placeholder="Kirjotia uusi tehtävä..."/>
+        <button type="submit">Lisää</button>
+    </form>
+
+<div class="filters">
+    <button data-filter="all">Kaikki</button>
+    <button data-filter="all">Aktiiviset</button>
+    <button data-filter="all">Valmiit</button>
+</div>
+
+</main>
+
+
     
-    <main>
-        <article class="kamera">
-            <h2>Kamera</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illo perferendis nesciunt voluptates nam, earum commodi delectus quos odio at. Itaque, nulla aut. Ex cupiditate fugit adipisci? Debitis, quia sequi.</p>
-            <p>Hinta: 19,99 €</p>
-            <button type="button" class="cta-button">Osta</button>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRULthq-HR9qJB19gwyZxl-pIyJTI-XKigBGdypNHGcvg&s=10" alt="Tuotekuva kamerasta">
-        </article>
-    </main>
-
-
-
 </body>
 </html>
