@@ -13,3 +13,4 @@ export function lataaTuotteet() {
 export function tallennaTuotteet(tuotteet) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(tuotteet));
 }
+
